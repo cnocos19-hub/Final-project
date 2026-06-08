@@ -3,69 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Charles L. Nocos | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">My Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="logo">CN.</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- HOME -->
-  <section id="home" class="hero">
-    <h1>Hi, I'm <span>Charles L. Nocos</span></h1>
-    <p>A Information System student learning to build websites.</p>
-    <a href="#projects" class="btn">See My Work</a>
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Charles L. Nocos</h1>
+      <p>BSIT Student</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-photo">
+      <img src="profile.jpg" alt="Profile Photo"
+        onerror="this.style.display='none'; this.parentElement.classList.add('no-img')" />
+    </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
+  <!-- ABOUT ME -->
+  <section id="about" class="about reveal">
     <h2>About Me</h2>
-    <p>I'm a student taking Information System at Agusan del Sur University. I enjoy learning how to create websites using HTML, CSS, and learning JavaScript.</p>
+    <div class="about-content">
+      <div class="about-img">
+        <img src="about me.jpg" alt="About Photo"
+          onerror="this.style.display='none'; this.parentElement.classList.add('no-img')" />
+      </div>
+      <div class="about-text">
+        <p>I am a first-year student at Agusan del Sur State University, currently pursuing a Bachelor of Science in Information Technology.
+          Back in high school, I was a journalist, which helped me develop strong communication and writing skills. 
+          Now, I enjoy exploring new ideas and learning things that challenge me to grow. My goal is to become a successful developer, 
+          building innovative solutions while continuously improving my knowledge and skills in technology.</p>
+        <p>MY hobbies are playing online games and joining some contest that is related to acting and voice actiong</p>
+    </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project 1</h3>
-      <h4>Service Inquery From</h4>
-      <p>A simple HTML contact form to collect user information.</p>
-      <p>HTML</p>
-    </div>
-    <div class="project-card">
-      <h3>Project 2</h3>
-      <h4>Company Profile Card</h4>
-      <p>Innovating digital experiences through web development</p>
-      <p>HTML,CSS</p>
-    </div>
-    <div class="project-card">
-      <h3>Project 3</h3>
-      <h4>Portfolio</h4>
-      <p>A simple portfolio that tracks my learning on how far am i in the web deveelopment</p>
-      <p>HTML,CSS</p>
+  <section id="projects" class="projects reveal">
+    <h2>My Projects</h2>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Injected by JavaScript -->
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: cnocos19@adssu.edu.ph<p>
-    <p>Contact: 09481202838<p>
+  <!-- SKILLS -->
+  <section id="skills" class="skills reveal">
+    <h2>Skills</h2>
+    <ul class="skills-list" id="skillsList">
+      <!-- Injected by JavaScript -->
+    </ul>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Charles</p>
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="footer-links">
+      <a href="mailto:cnocos19@adssuedu.ph">
+        <i class="fas fa-envelope"></i> cnocos19@adssuedu.ph
+      </a>
+      <a href="https://github.com/cnocos19-hub" target="_blank">
+        <i class="fab fa-github"></i> github.com/cnocos19-hub
+      </a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/squids.the.name" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/chaarlzx.me?igsh=d3lnZzFoYXdvZWYy" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/cnocos19-hub" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-copy">© 2025 Charles L. Nocos. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
