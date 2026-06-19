@@ -9,6 +9,11 @@
 </head>
 <body>
 
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text">CN.</div>
+  </div>
+
   <!-- HEADER / NAVBAR -->
   <header>
     <nav class="navbar" id="navbar">
@@ -17,6 +22,7 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -31,43 +37,83 @@
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <!-- HERO SECTION -->
   <section id="hero" class="hero">
     <div class="hero-text">
+      <p class="hero-greeting">👋 Hello, I'm</p>
       <h1>Charles L. Nocos</h1>
-      <p>BSIT Student</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <p class="hero-role">BSIT Student & Web Developer</p>
+      <p class="hero-desc">I build clean, functional, and responsive websites using HTML, CSS, and JavaScript.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.facebook.com/squids.the.name" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/chaarlzx.me?igsh=d3lnZzFoYXdvZWYy" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/cnocos19-hub" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
     <div class="hero-photo">
-      <img src="profile.jpg" alt="Profile Photo"
+      <img src="profile.jpg" alt="Charles L. Nocos"
         onerror="this.style.display='none'; this.parentElement.classList.add('no-img')" />
     </div>
   </section>
 
   <!-- ABOUT ME -->
   <section id="about" class="about reveal">
-    <h2>About Me</h2>
+    <div class="section-header">
+      <p class="section-label">Get to know me</p>
+      <h2>About Me</h2>
+    </div>
     <div class="about-content">
       <div class="about-img">
-        <img src="about me.jpg" alt="About Photo"
+        <img src="about me.jpg" alt="About Charles"
           onerror="this.style.display='none'; this.parentElement.classList.add('no-img')" />
       </div>
       <div class="about-text">
-        <p>I am a first-year student at Agusan del Sur State University, currently pursuing a Bachelor of Science in Information Technology.
-          Back in high school, I was a journalist, which helped me develop strong communication and writing skills. 
-          Now, I enjoy exploring new ideas and learning things that challenge me to grow. My goal is to become a successful developer, 
-          building innovative solutions while continuously improving my knowledge and skills in technology.</p>
-        <p>MY hobbies are playing online games and joining some contest that is related to acting and voice actiong</p>
+        <p>Hi! I'm <strong>Charles L. Nocos</strong>, a Bachelor of Science in Information Technology (BSIT) student with a passion for web development and design.</p>
+        <p>I enjoy turning ideas into reality through clean and functional code. I'm constantly learning new technologies and improving my skills to become a better developer every day.</p>
+        <p>When I'm not coding, you can find me browsing design inspiration, exploring new tools, or connecting with people online.</p>
+        <div class="about-details">
+          <div class="detail-item">
+            <i class="fas fa-envelope"></i>
+            <span>cnocos19@adssuedu.ph</span>
+          </div>
+          <div class="detail-item">
+            <i class="fab fa-github"></i>
+            <span>github.com/cnocos19-hub</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>BSIT Student</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Philippines</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn" style="margin-top:20px; display:inline-block;">Get In Touch</a>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="projects reveal">
-    <h2>My Projects</h2>
+    <div class="section-header">
+      <p class="section-label">What I've built</p>
+      <h2>My Projects</h2>
+    </div>
     <div class="projects-grid" id="projectsGrid">
       <!-- Injected by JavaScript -->
     </div>
@@ -75,28 +121,75 @@
 
   <!-- SKILLS -->
   <section id="skills" class="skills reveal">
-    <h2>Skills</h2>
-    <ul class="skills-list" id="skillsList">
+    <div class="section-header">
+      <p class="section-label">What I work with</p>
+      <h2>My Skills</h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid">
       <!-- Injected by JavaScript -->
-    </ul>
+    </div>
   </section>
 
-  <!-- CONTACT / FOOTER -->
-  <footer id="contact" class="footer">
-    <div class="footer-links">
-      <a href="mailto:cnocos19@adssuedu.ph">
-        <i class="fas fa-envelope"></i> cnocos19@adssuedu.ph
-      </a>
-      <a href="https://github.com/cnocos19-hub" target="_blank">
-        <i class="fab fa-github"></i> github.com/cnocos19-hub
-      </a>
+  <!-- CONTACT -->
+  <section id="contact" class="contact reveal">
+    <div class="section-header">
+      <p class="section-label">Let's talk</p>
+      <h2>Contact Me</h2>
     </div>
-    <div class="footer-socials">
-      <a href="https://www.facebook.com/squids.the.name" target="_blank"><i class="fab fa-facebook"></i></a>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p>Have a question, a project idea, or just want to say hi? Feel free to reach out — I'd love to hear from you!</p>
+        <div class="contact-details">
+          <a href="mailto:cnocos19@adssuedu.ph" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>cnocos19@adssuedu.ph</span>
+          </a>
+          <a href="https://github.com/cnocos19-hub" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i>
+            <span>github.com/cnocos19-hub</span>
+          </a>
+          <a href="https://www.facebook.com/squids.the.name" target="_blank" class="contact-item">
+            <i class="fab fa-facebook"></i>
+            <span>facebook.com/squids.the.name</span>
+          </a>
+          <a href="https://www.instagram.com/chaarlzx.me?igsh=d3lnZzFoYXdvZWYy" target="_blank" class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <span>instagram.com/chaarlzx.me</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nameInput">Your Name</label>
+            <input type="text" id="nameInput" placeholder="e.g. Juan Dela Cruz" required />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Your Email</label>
+            <input type="email" id="emailInput" placeholder="e.g. juan@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="messageInput">Your Message</label>
+            <textarea id="messageInput" placeholder="Write your message here..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%;">Send Message</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">CN.</div>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/squids.the.name" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/chaarlzx.me?igsh=d3lnZzFoYXdvZWYy" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://github.com/cnocos19-hub" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
-    <p class="footer-copy">© 2025 Charles L. Nocos. All rights reserved.</p>
+    <p class="footer-copy">© 2026 Charles L. Nocos. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
